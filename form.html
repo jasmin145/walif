@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pitha Ghor</title>
+  <link rel="stylesheet" href="styles/nav.css">
+  <style>
+    label {
+      display: block;
+      margin-bottom: 10px;
+     
+       }
+       fieldset {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        width: 600px;
+       }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="table.html">Table</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h2>Please fill up the form</h2>
+  <form>
+    <label for="name">Your Name:
+    <input type="text" id="name"  placeholder="Enter your name" required></label>
+    <label for="email">Your Email:
+    <input type="email" id="email"  placeholder="Enter your email" required></label>
+    <label for="phone number">Your Phone:
+    <input type="number" id="number" placeholder="Enter your phone number" required></label>
+    <fieldset>
+      <legend>Pick your favorite pitha</legend>
+        <label for="pitha1">
+        <input type="radio" id="pitha1" name="pitha">
+        Chitoya Pitha</label>
+        <label for="pitha2">
+        <input type="radio" id="pitha2" name="pitha">
+        Vapa Pitha</label>
+        <label for="pitha3">
+        <input type="radio" id="pitha3" name="pitha">
+        Puli Pitha</label>
+        
+    </fieldset>
+    <fieldset>
+     <legend>Pick one or more vorta</legend>
+     <label for="vorta1">
+        <input type="checkbox" id="vorta1" name="vorta">Coriender Vorta
+      </label> 
+      <label for="vorta2">
+        <input type="checkbox" id="vorta2" name="vorta">Beetroot Vorta
+      </label> 
+      <label for="vorta3">
+        <input type="checkbox" id="vorta3" name="vorta">Tomato Vorta
+      </label>
+      <label for="vorta4">
+        <input type="checkbox" id="vorta4" name="vorta">Sorisha Vorta
+      </label>
+      <label for="vorta5"><input type="checkbox" id="vorta5" name="vorta">Chili Vorta</label> 
+      
+    </fieldset>
+    <fieldset>
+      <legend>Special Instruction</legend>
+      <Textarea name="instruction" id="instruction" cols="30" rows="3"></Textarea>
+    </fieldset>
+    
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
